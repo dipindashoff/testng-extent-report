@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNGPractice]">
+  <listeners>
+    <listener class-name="testng.practice.ITestListenerImpl"/>
+  </listeners>
+  <test thread-count="5" name="Logging-Listener(failed)">
+    <classes>
+      <class name="testng.practice.LoggingListenerTest">
+        <methods>
+          <include name="fail"/>
+        </methods>
+      </class> <!-- testng.practice.LoggingListenerTest -->
+    </classes>
+  </test> <!-- Logging-Listener(failed) -->
+</suite> <!-- Failed suite [TestNGPractice] -->
